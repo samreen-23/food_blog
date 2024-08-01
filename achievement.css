@@ -1,0 +1,60 @@
+body {
+    background-color: purple;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin-left: 22rem;
+    text-align: center;
+    margin-top: 2rem;
+    border: 3px solid transparent; /* Set border color to transparent initially */
+    border-radius: 5rem;
+    width: 40rem;
+    color: white;
+    padding: 20px;
+    transition: border-color 0.3s ease-in-out; /* Smooth transition for border color */
+    box-shadow: 5px 5px 15px rgba(255, 0, 0, 0.5); /* Adjust shadow properties */
+}
+
+/* Apply border color and increase shadow on hover */
+div:hover {
+    border-color: yellow; /* Change border color on hover */
+    box-shadow: 5px 5px 25px rgba(255, 0, 0, 0.8); /* Increase shadow on hover */
+}
+
+h1 {
+    color: yellow;
+    text-decoration: underline;
+}
+
+p {
+    color: #fff;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+div p:hover {
+    color: yellow;
+}
+
+@media only screen and (max-width: 768px) {
+    div {
+        margin: 0 auto;
+        width: 90%;
+        border-radius: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+}
